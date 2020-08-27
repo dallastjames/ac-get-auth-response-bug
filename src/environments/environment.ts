@@ -1,9 +1,26 @@
+import { Environment } from './environment.model';
+
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+export const environment: Environment = {
+  production: false,
+  webHost: 'http://localhost:8100/',
+  appHost: 'msauth://',
+  congnito: {
+    authConfig: 'cognito',
+    clientID: '4geagm2idmq87fii15dq9toild',
+    discoveryUrl:
+      'https://cognito-idp.us-east-2.amazonaws.com/us-east-2_YU8VQe29z/.well-known/openid-configuration',
+    clientSecret: '124dch1p6824ppuef8o71unk14d4pt3p5hnntofvu21i2m960r1g',
+    redirectUri: '',
+    scope: 'openid email profile',
+    audience: '',
+    logoutUrl: '',
+    iosWebView: 'private',
+    logLevel: 'DEBUG',
+  },
 };
 
 /*
