@@ -1,0 +1,7 @@
+{
+  "name": "ac-get-auth-reponse-bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
